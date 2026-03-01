@@ -4,9 +4,9 @@
 
 # Pinyin to Chinese
 
-**Select pinyin text on any webpage and instantly convert it to Chinese characters.**
+**在任何網頁上選取拼音文字，一鍵轉換為中文字。**
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-4285f4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-擴充功能-4285f4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
 [![Manifest V3](https://img.shields.io/badge/Manifest-V3-34a853?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-f7df1e?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -16,58 +16,58 @@
 
 ---
 
-## Features
+## 功能特色
 
-- **Text Selection Conversion** — Select pinyin text (e.g. `ni hao`) on any webpage, a floating icon appears, click to convert
-- **Traditional & Simplified** — Toggle between 繁體 and 簡體 output
-- **Multiple Candidates** — Shows alternative candidates, click to switch
-- **Copy to Clipboard** — One-click copy, or enable auto-copy in settings
-- **Pinyin Formats** — Handles `ni hao`, `nǐ hǎo`, and `ni3hao3`
-- **Shadow DOM** — Isolated UI, won't conflict with any webpage styles
+- **選取即轉換** — 在任意網頁選取拼音文字（如 `ni hao`），旁邊出現浮動圖示，點擊即轉換
+- **繁體 / 簡體切換** — 支援繁體與簡體中文輸出
+- **多候選結果** — 顯示多個候選字詞，點擊可切換
+- **一鍵複製** — 點擊 Copy 複製結果，或開啟自動複製
+- **多種拼音格式** — 支援 `ni hao`、`nǐ hǎo`、`ni3hao3`
+- **Shadow DOM 隔離** — UI 不受網頁樣式影響
 
-## Demo
+## 使用示範
 
-> Select `wo xi huan xue zhong wen` → click **拼** → **我喜歡學中文**
+> 選取 `wo xi huan xue zhong wen` → 點擊 **拼** → **我喜歡學中文**
 
-## Installation
+## 安裝方式
 
-1. Clone this repository
+1. Clone 此專案
    ```bash
    git clone https://gitlab.com/zac15987/pinyin-to-chinese.git
    ```
-2. Open Chrome → navigate to `chrome://extensions/`
-3. Enable **Developer mode** (top right)
-4. Click **Load unpacked** → select the `src` folder
+2. 開啟 Chrome → 前往 `chrome://extensions/`
+3. 開啟右上角 **開發者模式**
+4. 點擊 **載入未封裝項目** → 選擇 `src` 資料夾
 
-## Usage
+## 使用方法
 
-1. **Select** any pinyin text on a webpage
-2. A blue **拼** icon appears near the selection
-3. **Click** the icon to convert
-4. **Copy** the result or click an alternative candidate
+1. 在任意網頁上 **選取** 拼音文字
+2. 選取旁邊會出現藍色 **拼** 圖示
+3. **點擊** 圖示進行轉換
+4. **複製** 結果，或點擊其他候選字詞切換
 
-## Settings
+## 設定
 
-Click the extension icon in the toolbar to open settings:
+點擊工具列的擴充功能圖示開啟設定：
 
-| Setting | Default | Options |
-|---------|---------|---------|
-| **Output** | 繁體 (Traditional) | 繁體 / 簡體 |
-| **Candidates** | 4 | 1 – 9 |
-| **Auto Copy** | Off | On / Off |
+| 設定 | 預設值 | 選項 |
+|------|--------|------|
+| **輸出字體** | 繁體 | 繁體 / 簡體 |
+| **候選數量** | 4 | 1 – 9 |
+| **自動複製** | 關閉 | 開啟 / 關閉 |
 
-> Settings sync across devices via `chrome.storage.sync` and take effect immediately.
+> 設定透過 `chrome.storage.sync` 同步，修改後即時生效，無需重新整理頁面。
 
-## Project Structure
+## 專案結構
 
 ```
 pinyin-to-chinese/
 ├── src/
-│   ├── manifest.json    # Manifest V3 config
-│   ├── content.js       # Selection detection, API, popup UI
-│   ├── content.css      # Host element positioning
-│   ├── popup.html       # Settings page
-│   ├── popup.js         # Settings logic
+│   ├── manifest.json    # Manifest V3 設定
+│   ├── content.js       # 選取偵測、API 呼叫、彈出 UI
+│   ├── content.css      # Host 元素定位
+│   ├── popup.html       # 設定頁面
+│   ├── popup.js         # 設定邏輯
 │   └── icons/
 │       ├── icon16.png
 │       ├── icon48.png
@@ -76,15 +76,15 @@ pinyin-to-chinese/
 └── README.md
 ```
 
-## API Reference
+## API 參考
 
-Uses [Google Input Tools API](https://www.google.com/inputtools/) for conversion:
+使用 [Google Input Tools API](https://www.google.com/inputtools/) 進行拼音轉中文：
 
-| Mode | `itc` Parameter |
-|------|-----------------|
-| Traditional | `zh-hant-t-i0-pinyin` |
-| Simplified | `zh-t-i0-pinyin` |
+| 模式 | `itc` 參數 |
+|------|-----------|
+| 繁體 | `zh-hant-t-i0-pinyin` |
+| 簡體 | `zh-t-i0-pinyin` |
 
-## License
+## 授權條款
 
-This project is licensed under the [MIT License](LICENSE).
+本專案採用 [MIT License](LICENSE) 授權。
