@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Pinyin to Chinese",
+  "version": "1.0",
+  "description": "Select pinyin text and convert to Chinese characters",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://inputtools.google.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

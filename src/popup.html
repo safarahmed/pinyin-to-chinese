@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 280px;
+      padding: 16px;
+      font-family: 'Microsoft YaHei', 'PingFang SC', -apple-system, sans-serif;
+      font-size: 13px;
+      color: #333;
+    }
+    h1 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    h1 .logo {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #4285f4;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .setting-group {
+      margin-bottom: 14px;
+    }
+    .setting-label {
+      font-weight: 500;
+      margin-bottom: 6px;
+      color: #555;
+    }
+    .radio-group {
+      display: flex;
+      gap: 16px;
+    }
+    .radio-group label {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+    }
+    select {
+      padding: 4px 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 13px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+    .saved-msg {
+      font-size: 11px;
+      color: #34a853;
+      opacity: 0;
+      transition: opacity 0.2s;
+      margin-top: 10px;
+    }
+    .saved-msg.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1><span class="logo">拼</span>Pinyin to Chinese</h1>
+
+  <div class="setting-group">
+    <div class="setting-label">輸出字體</div>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="variant" value="traditional">
+        繁體
+      </label>
+      <label>
+        <input type="radio" name="variant" value="simplified">
+        簡體
+      </label>
+    </div>
+  </div>
+
+  <div class="setting-group">
+    <div class="setting-label">候選數量</div>
+    <select id="numCandidates">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+  </div>
+
+  <div class="setting-group">
+    <label class="checkbox-label">
+      <input type="checkbox" id="autoCopy">
+      轉換後自動複製
+    </label>
+  </div>
+
+  <div class="saved-msg" id="savedMsg">已儲存</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

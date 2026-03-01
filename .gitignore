@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+out/
+
+# Environment and secrets
+.env
+.env.local
+*.pem
+*.key
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Packages
+*.zip
+*.crx
+*.xpi
+
+# Logs
+*.log
+npm-debug.log*
+
+# Source maps (optional)
+*.map
+
+# Web-ext
+web-ext-artifacts/
