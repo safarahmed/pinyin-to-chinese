@@ -29,6 +29,10 @@
 
 > 選取 `wo xi huan xue zhong wen` → 點擊 **拼** → **我喜歡學中文**
 
+<div align="center">
+<img src="assets/example.png" alt="使用示範" width="600">
+</div>
+
 ## 安裝方式
 
 1. Clone 此專案
@@ -49,6 +53,10 @@
 ## 設定
 
 點擊工具列的擴充功能圖示開啟設定：
+
+<div align="center">
+<img src="assets/popup.png" alt="設定頁面" width="240">
+</div>
 
 | 設定 | 預設值 | 選項 |
 |------|--------|------|
